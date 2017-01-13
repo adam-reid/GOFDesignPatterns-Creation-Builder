@@ -35,7 +35,7 @@ public class Robot implements RobotPlan{
 
     @Override
     public void setRobotCatchPhrase(String phrase) {
-        this.robotCatchPhrase = phrase
+        this.robotCatchPhrase = phrase;
     }
 
     @Override
