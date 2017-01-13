@@ -33,7 +33,7 @@ public class OldRobotBuilder implements RobotBuilder {
 
     @Override
     public void buildRobotCatchPhrase() {
-        robot.getRobotCatchPhrase("Gee golly!");
+        robot.setRobotCatchPhrase("Gee golly!");
     }
 
     @Override
