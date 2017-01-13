@@ -7,8 +7,8 @@ public class OldRobotBuilder implements RobotBuilder {
 
     private Robot robot;
 
-    public OldRobotBuilder(Robot robot) {
-        this.robot = robot;
+    public OldRobotBuilder() {
+        this.robot = new Robot();
     }
 
     @Override
