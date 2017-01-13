@@ -43,6 +43,6 @@ public class OldRobotBuilder implements RobotBuilder {
 
     @Override
     public Robot getRobot() {
-        return null;
+        return this.robot;
     }
 }
