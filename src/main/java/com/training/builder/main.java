@@ -5,8 +5,12 @@ package com.training.builder;
  */
 public class main {
     public static void main(String[] args) {
-        RobotBuilder robotBuilder;
-        RobotDirector robotDirector;
-        Robot robot;
+        RobotBuilder oldRobotPlans = new OldRobotBuilder();
+        RobotDirector robotDirector = new RobotDirector(oldRobotPlans);
+
+        robotDirector.makeRobot();
+        Robot robot = robotDirector.getRobot();
+
+        System.out.println(robot.toString());
     }
 }

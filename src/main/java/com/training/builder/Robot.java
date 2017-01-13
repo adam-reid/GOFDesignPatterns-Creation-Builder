@@ -66,5 +66,17 @@ public class Robot implements RobotPlan{
     public String getRobotAction() {
         return robotAction;
     }
+
+    @Override
+    public String toString() {
+        return "Robot{" +
+                "robotHead='" + robotHead + '\'' +
+                ", robotArms='" + robotArms + '\'' +
+                ", robotTorso='" + robotTorso + '\'' +
+                ", robotLegs='" + robotLegs + '\'' +
+                ", robotCatchPhrase='" + robotCatchPhrase + '\'' +
+                ", robotAction='" + robotAction + '\'' +
+                '}';
+    }
 }
 
