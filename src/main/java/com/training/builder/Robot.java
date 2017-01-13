@@ -1,7 +1,70 @@
 package com.training.builder;
 
 /**
- * Created by adame on 1/13/2017.
+ * Concrete class of the {@link RobotPlan}.
  */
-public interface Robot {
+public class Robot implements RobotPlan{
+
+    private String robotHead;
+    private String robotArms;
+    private String robotTorso;
+    private String robotLegs;
+    private String robotCatchPhrase;
+    private String robotAction;
+
+
+    @Override
+    public void setRobotHead(String head) {
+        this.robotHead = head;
+    }
+
+    @Override
+    public void setRobotArms(String arms) {
+        this.robotArms = arms;
+    }
+
+    @Override
+    public void setRobotTorso(String torso) {
+        this.robotTorso = torso;
+    }
+
+    @Override
+    public void setRobotLegs(String legs) {
+        this.robotLegs = legs;
+    }
+
+    @Override
+    public void setRobotCatchPhrase(String phrase) {
+        this.robotCatchPhrase = phrase
+    }
+
+    @Override
+    public void setRobotAction(String action) {
+        this.robotAction = action;
+    }
+
+    public String getRobotHead() {
+        return robotHead;
+    }
+
+    public String getRobotArms() {
+        return robotArms;
+    }
+
+    public String getRobotTorso() {
+        return robotTorso;
+    }
+
+    public String getRobotLegs() {
+        return robotLegs;
+    }
+
+    public String getRobotCatchPhrase() {
+        return robotCatchPhrase;
+    }
+
+    public String getRobotAction() {
+        return robotAction;
+    }
 }
+
